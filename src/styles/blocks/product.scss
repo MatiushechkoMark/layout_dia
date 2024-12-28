@@ -1,0 +1,49 @@
+.product {
+  &__photo {
+    width: 166px;
+    height: 166px;
+    object-fit: cover;
+    border-radius: $border-radius-for-img;
+    margin-top: 56px;
+    align-items: center;
+
+    transition: transform 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include on-tablet {
+      margin-top: 64px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: $color-for-light-bg;
+    padding-top: 32px;
+    padding-bottom: 16px;
+
+    @include on-small-desktop {
+      padding-top: 40px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-for-light-bg-description;
+  }
+}
